@@ -6,23 +6,34 @@ var d = 300;
 var x2 =350;
 var y2 =200;
 
-var cx=200;
+var cx=400;
 var cy=200;
+
+var tx = 20;
+
+var angleSlider;
 
 
 function setup() {
   createCanvas(600, 400);
   smooth();
   noFill();
+  angleSlider=createSlider(0,360,[60]);
+  angleSlider.position(tx-5, 70);
+  textFont("Georgia");
+  smooth();
 }
 
 function draw() {
   background(255);
+
   rect(0, 0, width-1, height-1);
+
+  angle=(360-angleSlider.value());
   //axis
   stroke(0);
-  line(cx,50,cy,350);
-  line(50,cx,350,cy);
+  line(cx,cy-d/2,cx,cy+d/2);
+  line(cx-d/2,cy,cx+d/2,cy);
   //big circle
   ellipse(cx,cy,d,d);
   //line 1
@@ -53,34 +64,35 @@ function draw() {
     //calculate y1
     y2=d/2*sin(radians(angle))+20;
     stroke(200);
-    if(angle>180&&angle<270){
-      arc(cx, cy, 60, 60, PI*3, radians(angle));
-      stroke(237,34,93);
-      strokeWeight(3);
-      arc(cx, cy,300, 300,  PI*3, radians(angle));
-      strokeWeight(1);
-    }
-    if(angle>270&&angle<360){
-      arc(cx, cy, 60, 60, radians(angle), 0);
-      stroke(237,34,93);
-      strokeWeight(3);
-      arc(cx, cy,300, 300,  radians(angle), 0);
-      strokeWeight(1);
-    }
-    if(angle>0&&angle<90){
-      arc(cx, cy, 60, 60, 0,radians(angle));
-      stroke(237,34,93);
-      strokeWeight(3);
-      arc(cx, cy,300, 300,  0,radians(angle));
-      strokeWeight(1);
-    }
-    if(angle>90&&angle<180){
-      arc(cx, cy, 60, 60, radians(angle), PI);
-      stroke(237,34,93);
-      strokeWeight(3);
-      arc(cx, cy,300, 300,  radians(angle), PI);
-      strokeWeight(1);
-    }
+    arc(cx, cy, 60, 60, radians(angle),0);
+    // if(angle>180&&angle<270){
+    //   arc(cx, cy, 60, 60, PI*3, radians(angle));
+    //   stroke(237,34,93);
+    //   strokeWeight(3);
+    //   arc(cx, cy,300, 300,  PI*3, radians(angle));
+    //   strokeWeight(1);
+    // }
+    // if(angle>270&&angle<360){
+    //   arc(cx, cy, 60, 60, radians(angle), 0);
+    //   stroke(237,34,93);
+    //   strokeWeight(3);
+    //   arc(cx, cy,300, 300,  radians(angle), 0);
+    //   strokeWeight(1);
+    // }
+    // if(angle>0&&angle<90){
+    //   arc(cx, cy, 60, 60, 0,radians(angle));
+    //   stroke(237,34,93);
+    //   strokeWeight(3);
+    //   arc(cx, cy,300, 300,  0,radians(angle));
+    //   strokeWeight(1);
+    // }
+    // if(angle>90&&angle<180){
+    //   arc(cx, cy, 60, 60, radians(angle), PI);
+    //   stroke(237,34,93);
+    //   strokeWeight(3);
+    //   arc(cx, cy,300, 300,  radians(angle), PI);
+    //   strokeWeight(1);
+    // }
   stroke(0);
   //labels
   text("90",cx-5,20);
@@ -89,18 +101,24 @@ function draw() {
   text("0",cx+d/2+5,cy+5);
   text("270",cx-10,cy+d/2+40);
   text("3 / 2 "+"\u03C0",cx-15,cy+d/2+20);
-  text("180",10,cy+5);
-  text("\u03C0",35,cy+5);
-
+  text("180",cx-d/2-50,cy+5);
+  text("\u03C0",cx-d/2-20,cy+5);
+  stroke(237,34,93);
+  fill(237,34,93);
+  textSize(14);
   //key
-  text("angle = "+round(angle) + " degrees",450,50);
-  text("angle = "+round(radians(angle)) + " radians",450,100);
+  text("Change the angle:",tx,50);
+  text("angle = "+round(360-angle) + " degrees",tx,height-120);
+  text("angle = "+(radians(360-angle)/PI).toFixed(2) + " \u03C0 radians",tx,height-150);
+  text("cos(angle) = "+cos(radians(angle)).toFixed(2),tx,height-90);
+  text("sin(angle) = "+sin(radians(angle)).toFixed(2),tx,height-60);
 
 
-  angle=angle-0.7;
-  if(angle<0){
 
-    angle=360.0;
-  }
+
+  // if(angle<0){
+  //
+  //   angle=360.0;
+  // }
 
 }
