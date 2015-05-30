@@ -7,3 +7,6 @@ General notes are here: https://p5jscon.hackpad.com/Education-working-group-S0hR
 
 Status of tutorial sets from p5 and Processing summarized here: https://docs.google.com/spreadsheets/d/1sh3IwcCUY4Bm8N4fRZw6CwSDdQmmXgY_awjVj-UC8mo/edit#gid=0 
 
+
+Drop box with drawings etc. here - https://www.dropbox.com/home/p5jscon 
+
