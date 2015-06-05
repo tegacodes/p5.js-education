@@ -1,0 +1,27 @@
+
+
+.p5_editor {
+  height: 500px;
+  width: 710px;
+  overflow: hidden;
+  margin-top: 0.5em;
+  color: #222;
+  font-family: 
+    inconsolatamedium, 
+    Consolas,
+    Monaco,
+    'Andale Mono', 
+    monospace;
+  font-size: 1em !important;
+  line-height: 1em;
+}
+
+.p5_sketch_link {
+  width: 100%;
+  float: left;
+  padding-bottom: 10px;
+}
+
+iframe {
+  border: none;
+}

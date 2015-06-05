@@ -28,8 +28,8 @@ function setup() {
 
 function draw() {
   background(255);
-
-  rect(0, 0, width-1, height-1);
+// stroke(200);
+//   rect(0, 0, width-1, height-1);
 
   angle=(360-angleSlider.value());
   //axis
@@ -59,7 +59,7 @@ function draw() {
   if(angle==90||angle==0||angle==180||angle==270){
 
   }else{
-  text("h",(x1+cx)/2+5,(cy+y1)/2+7);
+  text("r",(x1+cx)/2+5,(cy+y1)/2+7);
   text("x",(x1+cx)/2,cy-5);
   text("y",x1-10,(y1+cy)/2);
 }
@@ -133,13 +133,13 @@ function draw() {
   textSize(12);
   //text("SOH-CAH-TOA",tx,ty+160);
 
-  text("h = 1",tx,ty+160);
+  text("r = 1",tx,ty+160);
 
-  text("cos(angle) = x/h",tx,ty+200);
+  text("cos(angle) = x/r",tx,ty+200);
   text("cos("+(radians(360-angle)/PI).toFixed(2) +" \u03C0) = x/1",tx,ty+220);
   text(cos(radians(angle)).toFixed(2)+" = x",tx,ty+240);
 
-  text("sin(angle) = y/h",tx,ty+280);
+  text("sin(angle) = y/r",tx,ty+280);
   text("sin("+(radians(360-angle)/PI).toFixed(2) +" \u03C0) = y/1",tx,ty+300);
   text(-1*sin(radians(angle)).toFixed(2)+" = y",tx,ty+320);
 
