@@ -21,7 +21,7 @@ There are two methods for embedding sketches into html or php pages:
 ####(1) Use an iframe 
 The simplest solution is to use iframes. An iframe is basically a window into a nested page within a page, sandboxed from the rest of your page.  
 
-In your tutorial folder (mine's called trigonometry) put the index.php file (the html of your tutorial) in the top level of your folder. Then create a folder for any images used and a folder for each embedded p5 sketch. In each p5 sketch folder (the one show is called unitCircle) there should be the sketch.js file which contains your sketch code and also the index.html file which is the html file that displays only your sketch.  
+In your tutorial folder (mine's called trigonometry) put the index.php file (the html of your tutorial) in the top level of your folder. Then create a folder for any images used and a folder for each embedded p5 sketch. In each p5 sketch folder (see the one below is called unitCircle) there should be the sketch.js file which contains your p5 sketch code and also the index.html file which is the html file that displays only your sketch.  
 
  <img src="https://github.com/tegacodes/p5.js-education/raw/master/images/_tutorialfileStructure.png" alt="tutorialFileStructure" width="400px">
 
