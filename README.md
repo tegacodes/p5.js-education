@@ -12,26 +12,26 @@ Drop box with drawings etc. here - https://www.dropbox.com/home/p5jscon
 
 ##Guide to preparing your tutorial for the p5js site
 
-When writing tutorials for the p5 site, prepare the tutorial as a php file which has this basic page structure. Your file should contain the html for your tutorial page and should be placed in a folder of the name of your tutorial. Your tutorial folder will be placed in the 'tutorials' folder of the p5js site.
+When writing tutorials for the p5 site, prepare the tutorial as a php file which has this basic page structure. Your file should contain the html for your tutorial page and should be placed in a folder of the name of your tutorial. Your tutorial folder will be placed in the 'tutorials' folder of the p5js site.  
 ![tutorial files](https://github.com/tegacodes/p5.js-education/raw/master/images/_tutorials.png "Tutorial files")  
 
-###Guide to embedding p5 sketches into tutorials
+###Guide to embedding p5 sketches into tutorials  
 There are two methods for embedding sketches into html or php pages:   
 ####(1) Use an iframe 
-The simplest solution is to use iframes. An iframe is basically a window into a nested page within a page, sandboxed from the rest of your page. 
+The simplest solution is to use iframes. An iframe is basically a window into a nested page within a page, sandboxed from the rest of your page.  
 
-In your tutorial folder (mine's called trigonometry) put the index.php file (the html of your tutorial) in the top level of your folder. Then create a folder for any images used and a folder for each embedded p5 sketch. In each p5 sketch folder (the one show is called unitCircle) there should be the sketch.js file which contains your sketch code and also the index.html file which is the html file that displays only your sketch.
+In your tutorial folder (mine's called trigonometry) put the index.php file (the html of your tutorial) in the top level of your folder. Then create a folder for any images used and a folder for each embedded p5 sketch. In each p5 sketch folder (the one show is called unitCircle) there should be the sketch.js file which contains your sketch code and also the index.html file which is the html file that displays only your sketch.  
 ![tutorial file structure](https://github.com/tegacodes/p5.js-education/raw/master/images/_tutorialfileStructure.png "Tutorial file structure") 
 
-You can then embed the p5js index files as iframes in the html page of your tutorial.
+You can then embed the p5js index files as iframes in the html page of your tutorial.  
 
-For example, here is a sketch running:
+For example, here is a sketch running:  
 [http://p5js.org/tutorials/trigonometry/assets/unitCircle/embed.html](http://p5js.org/tutorials/trigonometry/assets/unitCircle/embed.html)
 
-And here it is embedded in the p5 site using the code below:
+And here it is embedded in the p5 site using the code below:  
 [http://p5js.org/tutorials/trigonometry/](http://p5js.org/tutorials/trigonometry/)
 
-Embed code for the iframe:
+Embed code for the iframe:  
 ```
 <iframe src="http://p5js.org/tutorials/trigonometry/assets/unitCircle/embed.html" width="600px" height="400px"></iframe>
 ```
