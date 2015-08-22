@@ -19,9 +19,9 @@ When writing tutorials for the p5 site, prepare the tutorial as an index.php fil
 ###Guide to embedding p5 sketches into tutorials  
 There are two methods for embedding sketches into html or php pages:   
 ####(1) Use an iframe 
-The simplest solution is to use iframes. An iframe is basically a window into a nested page within a page, sandboxed from the rest of your page.  
+The simplest solution is to use iframes. An iframe is basically a window to another page, sandboxed from the rest of your page.  
 
-In your tutorial folder (mine's called trigonometry) put the index.php file (the html of your tutorial) in the top level of your folder. Then create a folder for any images used and a folder for each embedded p5 sketch. In each p5 sketch folder (see the one below is called unitCircle) there should be the sketch.js file which contains your p5 sketch code and also the index.html file which is the html file that displays only your sketch.  
+In your tutorial folder (mine's called trigonometry) put the index.php file (this is the html of your tutorial) in the top level of your folder. Then create a folder for any images used and a folder for each embedded p5 sketch. In each p5 sketch folder (see the one below is called unitCircle) there should be the sketch.js file which contains your p5 sketch code and also the index.html file which is the html file that displays only your sketch.  
 
  <img src="https://github.com/tegacodes/p5.js-education/raw/master/images/_tutorialfileStructure.png" alt="tutorialFileStructure" width="400px">
 
@@ -43,7 +43,10 @@ and styling for the iframe (this could directly into a wordpress post or in a st
 ```
 Only trick here is that you need to manually set the size of the iframe, so it works best if things are a standard size.
 
-These instructions are taken from [here:](https://github.com/processing/p5.js/wiki/Embedding-p5.js)
+Also note that you do not need links to any of your .js files or even to the p5.js file if you embed this way as you are just creating a window to see through to the html page of your naked sketch. The js paths are all happening in the embed.html page which we are looking through to.
+
+This is also described [here:](https://github.com/processing/p5.js/wiki/Embedding-p5.js)
+
 
 
 ####(2) Use instance mode
