@@ -12,12 +12,12 @@ Drop box with drawings etc. here - https://www.dropbox.com/home/p5jscon
 
 ###Guide to embedding p5 sketches into tutorials
 There are two methods for embedding sketches into html or php pages:   
-(1) by using an iframe as outlined [here](https://github.com/processing/p5.js/wiki/Embedding-p5.js)
+####(1) by using an iframe as outlined [here](https://github.com/processing/p5.js/wiki/Embedding-p5.js)
 
 
-(2) by converting your p5 sketch to [instance mode](http://p5js.org/examples/examples/Instance_Mode_Instantiation.php). You can then set up a parent class for your sketch and call the class as a div in your sketch. See below:
+####(2) by converting your p5 sketch to [instance mode](http://p5js.org/examples/examples/Instance_Mode_Instantiation.php). You can then set up a parent class for your sketch and call the class as a div in your sketch. See below:
 
-'''
+```javascript
 var sketch = function( p ) { //set up instance of your sketch and call it p
   var cx=40;
   var cy=20;
@@ -34,8 +34,8 @@ var sketch = function( p ) { //set up instance of your sketch and call it p
 };
 
 var myp5 = new p5(sketch); //last of all you end with this line. 
-'''
+```
 And then embed your parent class into your html/php page wherever you want it:
-'''
+```javascript
 <div id="unitCircle" style="position:relative;"></div>
-'''
+```
