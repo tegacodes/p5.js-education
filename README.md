@@ -12,7 +12,7 @@ Drop box with drawings etc. here - https://www.dropbox.com/home/p5jscon
 
 ##Guide to preparing your tutorial for the p5js site
 
-When writing tutorials for the p5 site, prepare the tutorial as an index.php file which has [this basic structure](https://github.com/processing/p5.js-website/blob/master/get-started/index.php). Your file should contain the html for your tutorial page and should be placed in a folder of the name of your tutorial. Your tutorial folder will be placed in the 'tutorials' folder of the p5js site. So in the image below, the orange index.php is the tutorials landing page, the green index.php is the file I've made for the trigonometry tutorial.
+When writing tutorials for the p5 site, prepare the tutorial as an index.php file which has [this basic structure](https://github.com/processing/p5.js-website/blob/master/get-started/index.php). Your file should contain the html for your tutorial page and should be placed in a folder of the name of your tutorial (here my one is called 'trigonometry'. Your tutorial folder will be placed in the 'tutorials' folder of the p5js site with all the others. In the image below, the orange index.php is the tutorials landing page, the green index.php is the file I've made for the trigonometry tutorial.
   <img src="https://github.com/tegacodes/p5.js-education/raw/master/images/_tutorials1.png" alt="alt text" width="400px">
 
 ###Guide to embedding p5 sketches into tutorials  
