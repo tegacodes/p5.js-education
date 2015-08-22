@@ -12,30 +12,42 @@ Drop box with drawings etc. here - https://www.dropbox.com/home/p5jscon
 
 ###Guide to embedding p5 sketches into tutorials
 There are two methods for embedding sketches into html or php pages:   
-####(1) by using an iframe as outlined [here](https://github.com/processing/p5.js/wiki/Embedding-p5.js)
+####(1) Use an iframe 
+How to use an iframe is outlined [here](https://github.com/processing/p5.js/wiki/Embedding-p5.js)
 
 
-####(2) by converting your p5 sketch to [instance mode](http://p5js.org/examples/examples/Instance_Mode_Instantiation.php). You can then set up a parent class for your sketch and call the class as a div in your sketch. See below:
+####(2) Use instance mode
+Converting your p5 sketch to [instance mode](http://p5js.org/examples/examples/Instance_Mode_Instantiation.php). You can then set up a parent class for your sketch and call the class as a div in your sketch. 
+
+You will need to convert your sketch making the following changes. This code is a file called unitCircle.js.
 
 ```javascript
-var sketch = function( p ) { //set up instance of your sketch and call it p
+var sketch = function( p ) { //1. set up instance of your sketch and call it p - this means your whole sketch will go into {} as a block of code
   var cx=40;
   var cy=20;
 
-  p.setup= function() {   //write set up like this now. With the p. in front that indicates your instance
-    var myCanvas = p.createCanvas(600, 400); //all p5 functions must now have the prefix "p." as they are part of the p instance. Here createCanvas is now p.createCanvas
-    myCanvas.parent('unitCircle'); //set up parent class called unitCircle
+  p.setup= function() {   //2. Change set up and draw to look like this. The p. in front indicates these belong to your instance called p.
+    var myCanvas = p.createCanvas(600, 400); // 3. all p5 functions must now have the prefix "p." as they are part of the p instance. Here createCanvas is now p.createCanvas. 
+    myCanvas.parent('unitCircle'); //4. After you have created your canvas, here mine's called myCanvas, set up parent class called unitCircle or whatever you want to call your sketch.
   };
 
-  p.draw=function() {
-    p.background(255); 
+  p.draw=function() {  //<--- change draw too!
+    p.background(255);  //<--- and don't forget the p in front of all of your p5 functions.
     p.ellipse(cx,cy,20,20);
   };
 };
 
-var myp5 = new p5(sketch); //last of all you end with this line. 
+var myp5 = new p5(sketch); //5. last of all you end with this line. 
 ```
-And then embed your parent class into your html/php page wherever you want it:
+
+And then on your html/php page:
+*Add in your path to your javascript file at the top. I've got mine in a folder called assets.
+```  
+<script language="javascript" src="assets1/unitCircle.js"></script>
+```
+*Make sure your paths to the p5 libraries are good too.
+*Then, whereever you want your sketch to show up, embed your parent class as a div:
+
 ```javascript
 <div id="unitCircle" style="position:relative;"></div>
 ```
