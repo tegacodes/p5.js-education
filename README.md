@@ -16,7 +16,9 @@ When writing tutorials for the p5 site, prepare the tutorial as an index.php fil
 
   <img src="https://github.com/tegacodes/p5.js-education/raw/master/images/_tutorials1.png" alt="alt text" width="400px">
 
-###Guide to embedding p5 sketches into tutorials  
+Use the html header tags, paragraph tags and section divisions using that getting started page as a guide. You may also want to embed p5 sketchs.
+
+###Embedding p5 sketches into tutorials  
 There are two methods for embedding sketches into html or php pages:
 ####(1) Use an iframe
 The simplest solution is to use iframes. An iframe is basically a window to another page, sandboxed from the rest of your page.  
