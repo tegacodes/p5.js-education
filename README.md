@@ -43,7 +43,7 @@ and styling for the iframe (this could directly into a wordpress post or in a st
 ```
 Only trick here is that you need to manually set the size of the iframe, so it works best if things are a standard size.
 
-Also note that you do not need links to any of your .js files or even to the p5.js file if you embed this way as you are just creating a window to see through to the html page of your naked sketch. The js paths are all happening in the embed.html page which we are looking through to.
+Also note that you do not need links to any of your .js files or even to the p5.js file if you embed this way as you are just creating a window to see through to the html page of your naked sketch. The js paths are all happening in the embed.html page which we are looking through to. Here's a really crap drawing that shows what's going on...
 
  <img src="https://github.com/tegacodes/p5.js-education/raw/master/images/iframe-2.jpg" alt="tutorialFileStructure" width="600px">
 
