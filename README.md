@@ -16,7 +16,7 @@ When writing tutorials for the p5 site, prepare the tutorial as an index.php fil
 
   <img src="https://github.com/tegacodes/p5.js-education/raw/master/images/_tutorials1.png" alt="alt text" width="400px">
 
-Use the html header tags, paragraph tags and section divisions using that getting started page as a guide. You may also want to embed p5 sketchs.
+Use the html header tags, paragraph tags and section divisions using the page linked above as a guide. You may also want to embed p5 sketchs.
 
 ###Embedding p5 sketches into tutorials  
 There are two methods for embedding sketches into html or php pages:
@@ -45,7 +45,7 @@ and styling for the iframe (this could directly into a wordpress post or in a st
 ```
 Only trick here is that you need to manually set the size of the iframe, so it works best if things are a standard size.
 
-Also note that you do not need links to any of your .js files or even to the p5.js file if you embed this way as you are just creating a window to see through to the html page of your naked sketch. The js paths are all happening in the embed.html page which we are looking through to. Here's a really crap drawing that shows what's going on...
+Also note that you do not need links to any of your .js files nor links to the p5.js files if you embed this way. This is because you are just creating a window to see through to the html page of your naked sketch. The js paths are all happening in the embed.html page which we are looking through to. Here's a really crap drawing that shows what's going on...
 
  <img src="https://github.com/tegacodes/p5.js-education/raw/master/images/iframe-2.jpg" alt="tutorialFileStructure" width="600px">
 
