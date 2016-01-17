@@ -1,0 +1,169 @@
+var sineWave = [];
+
+
+function setup() {
+	createCanvas(100, 100);
+  	for (var i = 0; i < width; i++) {
+  		// Fill array with values from sin()
+  		var r = map(i, 0, width, 0, (TWO_PI));
+  		sineWave[i] = abs(sin(r));
+  }
+}
+
+function draw() {
+	for (var i = 0; i < sineWave.length; i++) {
+		// Set stroke values to numbers read from array
+		stroke(sineWave[i] * 255);
+		line(i, 0, i, height);
+  }
+}
+
+
+
+
+************
+
+var y = [];
+
+function setup() {
+  createCanvas(100, 100);
+}
+
+function draw() {
+  background(204); // Read the array from the end to the
+  // beginning to avoid overwriting the data
+  for (var i = width - 1; i > 0; i--) {
+    y[i] = y[i-1];
+  }
+  // Add new values to the beginning
+  y[0] = mouseY;
+  // Display each pair of values as a line
+  for (var i = 1; i < y.length; i++) {
+    line(i, y[i], i-1, y[i-1]);
+  }
+}
+
+
+***************
+int num = 50;
+int[] x = new int[num];
+int[] y = new int[num];
+
+void setup() { 
+  size(100, 100);
+  noStroke();
+  fill(255, 102);
+}
+
+void draw() {
+  background(0);
+  // Shift the values to the right
+  for (int i = num-1; i > 0; i--) {
+    x[i] = x[i-1];
+    y[i] = y[i-1];
+  }
+  // Add the new values to the beginning of the array
+  x[0] = mouseX;
+  y[0] = mouseY;
+  // Draw the circles
+  for (int i = 0; i < num; i++) {
+    ellipse(x[i], y[i], i/2.0, i/2.0);
+  }
+}
+
+
+************
+
+var num = 50;
+var x =[num];
+var y =[num];
+var indexPosition = 0;
+
+function setup() {
+  createCanvas(100, 100);
+  noStroke();
+  fill(255, 102);
+}
+
+function draw() {
+  background(0);
+  x[indexPosition] = mouseX;
+  y[indexPosition] = mouseY;
+  // Cycle between 0 and the number of elements
+  indexPosition = (indexPosition + 1) % num;
+  for (var i = 0; i < num; i++) {
+    // Set the array position to read
+    var pos = (indexPosition + i) % num;
+    var radius = (num-i) / 2.0;
+    ellipse(x[pos], y[pos], radius, radius);
+  }
+}
+
+
+****************
+
+var trees = ["ash", "oak"];
+
+function setup() {
+	append(trees, "maple"); // INCORRECT! Does not change the array
+	print(trees); // Prints [0] "ash", [1] "oak"
+
+	trees = append(trees, "maple"); // Add "maple" to the end
+	print(trees); // Prints [0] "ash", [1] "oak", [2] "maple"
+
+	// Add "beech" to the end of the trees array, and creates a new
+	// array to store the change
+
+	var moretrees = append(trees, "beech");
+
+	// Prints [0] "ash", [1] "oak", [2] "maple", [3] "beech"
+	print(moretrees);
+
+	console.log("hello world!");
+}
+
+function draw() {
+
+}
+
+
+**********
+
+var trees = ["lychee", "coconut", "fig"];
+
+function setup() {
+	trees = shorten(trees); // Remove the last element from the array
+	console.log(trees); // Prints [0] "lychee", [1] "coconut"
+	trees = shorten(trees); // Remove the last element from the array
+	console.log(trees); // Prints [0] "lychee"
+}
+
+function draw() {
+
+}
+
+
+**************
+
+var north = ["OH", "IN", "MI"];
+var south = ["GA", "FL", "NC"];
+
+var east = ["MA", "NY", "RI"];
+var west = []; // Create a new array
+
+function setup() {
+arrayCopy(north, south); // Copy from north array to south array
+console.log(south); // Prints [0] "OH", [1] "IN", [3] "MI"
+
+arrayCopy(east, west); // Copy from east array to west array
+console.log(west); // Prints [0] "MA", [1] "NY", [2] "RI"
+
+}
+
+function draw() {
+	
+}
+
+
+**********
+
