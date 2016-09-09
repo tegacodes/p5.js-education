@@ -10,7 +10,10 @@ Status of tutorial sets from p5 and Processing summarized here:   https://docs.g
 
 Drop box with drawings etc. here - https://www.dropbox.com/home/p5jscon  
 
-##Guide to preparing your tutorial for the p5js site
+##Guide to writing p5js tutorials
+
+We invite educators, contributors and general enthusiasts to propose, write and contribute p5js tutorials. The p5js project has a committment to making creative coding and open source development more accessible to a diverse community and as such are excited to publish tutorials on all aspects of the development process. This includes guides on the specifics of working with p5, programming topics, more advanced tutorials on programming techniques and guides on how to contribute to an open source project.
+
 
 When writing tutorials for the p5 site, prepare the tutorial as an index.php file which has [this basic structure](https://github.com/processing/p5.js-website/blob/master/get-started/index.php). Your file should contain the html for your tutorial page and should be placed in a folder of the name of your tutorial (here my one is called 'trigonometry'. Your tutorial folder will be placed in the 'tutorials' folder of the p5js site with all the others. In the screenshot below, the orange index.php is the [tutorials landing page,](http://p5js.org/tutorials/) the green index.php is my trigonometry tutorial.  
 
