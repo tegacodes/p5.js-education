@@ -28,7 +28,7 @@ When your tutorial is ready for publication, please follow these steps to prepar
 
 Prepare the content of your tutorial as a tutorial-name.hbs file with this [this basic structure](https://github.com/mayaman/p5js-website/blob/master/src/templates/pages/tutorials/test-tutorial.hbs]). As is shown in this file, it must contain a header as shown below:
 
-![Screenshot 1](p5.js-education/images/screenshot-1.png)
+![Screenshot 1](https://github.com/tegacodes/p5.js-education/raw/master/images/screenshot-1.png)
 
 The folder containing your tutorial will be placed in the 'tutorials' folder of the p5js site.The file called index.hbs is the [p5js tutorials landing page,](http://p5js.org/tutorials/ ) and the test-tutorial.hbs file is the test tutorial. 
 
@@ -37,15 +37,22 @@ All content should go in the:
 ```
  <section role="region" label="main content"></section>
 ```
-  tags on the page, with formatting defined by the<h1> and <h2> tags, the <p>paragraph tags as is done shown on the [test tutorial page.](https://github.com/processing/p5.js-website/blob/master/src/templates/pages/tutorials/test-tutorial.hbs)
+  tags on the page, with formatting defined by the 
+  ```
+  <h1> and <h2> tags, the <p> paragraph tags
+  ```
+  as is done shown on the [test tutorial page.](https://github.com/processing/p5.js-website/blob/master/src/templates/pages/tutorials/test-tutorial.hbs)
+  
 If your tutorial contains images, they are to be placed in the assets folder of the p5 site, in the location src/assets/tutorials/test-tutorial/images as shown below.
-![Screenshot 2](p5.js-education/images/screenshot-2.png)
+![Screenshot 2](https://github.com/tegacodes/p5.js-education/raw/master/images/screenshot-2.png)
 
 To correctly format code in the html of the page use the tag:
 
+```
 <pre><code class="language-javascript">
 Your code here!
 <code><pre>
+```
 
 ###Embedding p5.js sketches 
 Using p5js means you can illustrate your tutorial with animated, interactive or editable code examples to demonstrate programming concepts. Your examples should be prepared as p5.js sketches and can be embedded into the tutorial in two ways.  
@@ -59,10 +66,10 @@ An iframe is like creating a window through which you can see another page, sand
 <img src="https://github.com/tegacodes/p5.js-education/raw/master/images/iframe-2.jpg" alt="tutorialFileStructure" width="600px">
 
 Put your p5 sketches in the /src/assets/tutorials folder of the site, in a folder labelled with the name of your sketch as shown in the screenshot. This is where all the images and p5 sketches linked by iframe should be stored.
-![Screenshot 3](p5.js-education/images/screenshot-3.png)
+![Screenshot 3](https://github.com/tegacodes/p5.js-education/raw/master/images/screenshot-3.png)
 
 In the subfolders containing your p5 examples there should be a sketch.js file and the embed.html file for the sketch. 
-![Screenshot 4](p5.js-education/images/screenshot-4.png)
+![Screenshot 4](https://github.com/tegacodes/p5.js-education/raw/master/images/screenshot-4.png)
 
 Make sure your embed.html file has the correct paths to the p5 libraries of the site. If your file structure is the same as above, the path to the p5.js library should be “../../../js/p5.min.js”.
 You can then embed the p5js index files as iframes in the .hbs file that contains your tutorial content. The embed code for the iframe would then be:  
