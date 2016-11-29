@@ -34,7 +34,6 @@ All content should go in the:
 ####Including images
 If your tutorial contains images, they are to be placed in the assets folder of the p5 site, in the location src/assets/tutorials/test-tutorial/images as shown below.
 ![Screenshot 2](https://github.com/tegacodes/p5.js-education/raw/master/images/screenshot-2.png)
-
 ####Formatting code
 To correctly format javascript code blocks in your tutorial use the tag:
 
@@ -51,13 +50,13 @@ Your html code here!
 </xmp><code><pre>
 ```
 
-###Embedding p5.js sketches 
+####Embedding p5.js sketches 
 Using p5js means you can illustrate your tutorial with animated, interactive or editable code examples to demonstrate programming concepts. Your examples should be prepared as p5.js sketches and can be embedded into the tutorial in two ways.  
 
 If the example is to be editable like in [the reference pages](http://p5js.org/reference/#/p5/ellipse) of the p5js site, the p5 sketch should be embedded into the html page using the p5js widget. Follow [this guide](https://toolness.github.io/p5.js-widget/) on how to embed p5js sketches using the widgit written by [Toolness](https://github.com/toolness). You can also see this in action on the [test tutorial page.](https://github.com/processing/p5.js-website/blob/master/src/templates/pages/tutorials/test-tutorial.hbs)
 If the example is to be animated and/or interactive but not editable. The p5.js sketch should be embedded into the page as an iframe as described below.
 
-###Embed a p5 sketch using an iframe
+####Embed a p5 sketch using an iframe
 
 An iframe is like creating a window through which you can see another page, sandboxed from the rest of your page. In this case it will be a window to the index.html containing your p5.js sketch. 
 <img src="https://github.com/tegacodes/p5.js-education/raw/master/images/iframe-2.jpg" alt="tutorialFileStructure" width="600px">
@@ -91,7 +90,7 @@ Also note that the links to the p5.js library files do not happen from the .eps 
 
 More information on embedding p5js sketches can be found [here.](https://github.com/processing/p5.js/wiki/Embedding-p5.js)
 
-###Finishing Up
+####Finishing Up
 Once your have finished writing your tutorial and your content has been given the thumbs up. Fork the p5js website repository, prepare your content as described above and then issue a pull request to the p5js website repository so we can publish your contribution!
 
 Thank you!
