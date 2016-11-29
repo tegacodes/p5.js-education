@@ -46,12 +46,20 @@ All content should go in the:
 If your tutorial contains images, they are to be placed in the assets folder of the p5 site, in the location src/assets/tutorials/test-tutorial/images as shown below.
 ![Screenshot 2](https://github.com/tegacodes/p5.js-education/raw/master/images/screenshot-2.png)
 
-To correctly format code in the html of the page use the tag:
+####Formatting code
+To correctly format javascript code blocks in your tutorial use the tag:
 
 ```
 <pre><code class="language-javascript">
 Your code here!
 <code><pre>
+```
+
+To correctly format html code blocks in your tutorial use the tags:
+```
+<pre><code class="language-javascript"><xmp>
+Your html code here!
+</xmp><code><pre>
 ```
 
 ###Embedding p5.js sketches 
