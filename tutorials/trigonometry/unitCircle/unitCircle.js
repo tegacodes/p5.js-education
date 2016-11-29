@@ -118,6 +118,7 @@ var sketch = function( p ) {
     angle=(360-angleSlider.value());
     //axis
     p.stroke(0);
+        p.noFill();
     p.line(cx,cy-d/2,cx,cy+d/2);
     p.line(cx-d/2,cy,cx+d/2,cy);
     //big circle

@@ -150,6 +150,7 @@ function draw() {
 
 
   stroke(0);
+  fill(0);
 
 
   //labels
