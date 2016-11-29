@@ -13,7 +13,7 @@ We welcome new written tutorial contributions and this guide outlines the steps 
 ###How to prepare a p5js tutorial for publication online:
 When your tutorial is ready for publication, please follow these steps to prepare your content for the p5js website. 
 
-
+####Website structure
 Prepare the content of your tutorial as a tutorial-name.hbs file with this [this basic structure](https://github.com/mayaman/p5js-website/blob/master/src/templates/pages/tutorials/test-tutorial.hbs]). As is shown in this file, it must contain a header as shown below:
 
 ![Screenshot 1](https://github.com/tegacodes/p5.js-education/raw/master/images/screenshot-1.png)
@@ -30,7 +30,8 @@ All content should go in the:
   <h1> and <h2> tags, the <p> paragraph tags
   ```
   as is done shown on the [test tutorial page.](https://github.com/processing/p5.js-website/blob/master/src/templates/pages/tutorials/test-tutorial.hbs)
-  
+
+####Including images
 If your tutorial contains images, they are to be placed in the assets folder of the p5 site, in the location src/assets/tutorials/test-tutorial/images as shown below.
 ![Screenshot 2](https://github.com/tegacodes/p5.js-education/raw/master/images/screenshot-2.png)
 
