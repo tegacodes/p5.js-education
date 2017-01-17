@@ -1,6 +1,6 @@
-#P5JS Editor Walkthrough
+#P5JS Editor Walk-through
 
-This is a brief walk through of the p5 web editor. 
+This is a brief walk-through of the p5 web editor. 
 
 The p5 web editor allows for p5 sketches to be created, edited and saved in the browser. Sketches are saved to user accounts and can be viewed publicly. Media files such as images and sound can be uploaded for use in sketches. Files must be smaller than 5mb.
 
