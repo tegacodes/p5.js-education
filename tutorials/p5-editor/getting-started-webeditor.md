@@ -40,7 +40,7 @@ The p5 editor is in an alpha phase of development. Please report any bugs or iss
 
 - The console is where error and print commands are displayed.
 
-![Console](images/5a.png)
+![Console](images/5.png)
 
 ##Project Folder
 
@@ -66,11 +66,11 @@ The p5 editor is in an alpha phase of development. Please report any bugs or iss
 
 - Preferences is located at the cog to the top right of the screen. 
 
-![Editing window](images/6a.png)
+![Preferences](images/6a.png)
 
 - The preference menu is where the themes, text sizes, sounds and accessibility text based settings can be changed. Accessibility features are being developed for p5 to improve usability for people with low vision.
 
-![Editing window](images/7a.png)
+![Preferences](images/7a.png)
 
 
 
