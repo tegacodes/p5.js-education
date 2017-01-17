@@ -2,9 +2,9 @@
 
 This is a brief walk through of the p5 web editor. 
 
-The p5 web editor allows for p5 sketches to be created, edited and saved in the browser. Sketches are saved to user accounts and can be viewed publically. Media files such as images and sound can be uploaded for use in your sketch. Files must be smaller than 5mb.
+The p5 web editor allows for p5 sketches to be created, edited and saved in the browser. Sketches are saved to user accounts and can be viewed publicly. Media files such as images and sound can be uploaded for use in sketches. Files must be smaller than 5mb.
 
-The p5 editor is in an alpha phase of development. Please report any bugs or issues you find to us here. 
+The p5 editor is in an alpha phase of development. Please report any bugs or issues you find to us [here.](https://github.com/processing/p5.js-web-editor/issues) 
 
 ##Main Menu
 
@@ -18,33 +18,32 @@ The p5 editor is in an alpha phase of development. Please report any bugs or iss
 
 - SAVE: Saves the sketch to your account and assigns it a unique URL. This unique URL makes it easy to share homework or class examples and is defined by the unique identifier number at the end of the URL. Each sketch is also assigned a two word default name that can be changed.
 - Each sketch will be saved to your account with the date.
-- DUPLICATE: Duplicates any users sketch to your account where you can edit the code. All p5 sketches are public, however only the owner of the sketch can edit it.
-- DOWNLOAD: Downloads a zip of your sketch. The p5 library and any other javascript libraries in use are not included but linked to online CDN versions (in the index.html file). 
-- SHARE: Gived options to share your sketch in other places. This includes embed code to generates an iframe that can be included in another website. Fullscreen gives a link to the fullscreen version of your sketch. Edit takes you to the editor page of your sketch.
-- OPEN: Open previously saved p5 sketches.
-- EXAMPLES: Loads the examples included on the p5js website.
-- CONSOLE mirrors the chrome javascript console. 
-- REFERENCE: Link to reference page of p5js website.
-- ABOUT: links
+- DUPLICATE: Duplicates a user's sketch to your account where you can edit the code. All p5 sketches are public, however only the owner of the sketch can edit. 
+- DOWNLOAD: Downloads a zip of your sketch to your computer. The p5 library and any other javascript libraries in use are not included but linked to online CDN versions (in the index.html file). 
+- SHARE: This gives options to share your sketch in other places. Embed code allows for the sketch to be embed as an iframe in another website. Fullscreen gives a link to the fullscreen version of your sketch. Edit takes you to the editor page of your sketch.
+- OPEN: Opens previously saved p5 sketches.
+- EXAMPLES: Loads the examples from the p5js website.
+- REFERENCE: Links to reference page of p5js website.
+- ABOUT: Helpful links
 
 ##Editing Window
 ![Editing window](images/3a.png)
 
-- The editing window is where code can be written and edited. 
-- The play and stop buttons execute and stop your code running in the output display window that will appear to the right.
-- If the auto-refresh checkbox is checked this will make the output on the right update with every change you make. The default when this is unchecked, is that the output will only update if you press the play button.
+- The editing window is where the code is written and edited. 
+- The play and stop buttons execute and stop your code. When you press play your sketch output will be shown in the display window to the right.
+- If the auto-refresh checkbox is checked, the output will be updated with every change made. The default is to have this unchecked, and then the output will only update if you press the play button.
 - The dropdown arrow on the top right of the editing window is where you can autoformat your code. There is also a link here to the keyboard shortcuts for the editor.
 
 ![Editing window](images/4a.png)
 
 
-- The console is where error and print commands are displayed.
+- The console is where error and print commands are displayed and is modeled on the Chrome javascript console.
 
 ![Console](images/5.png)
 
 ##Project Folder
 
-- The project folder is found by clicking the arrow of the filename. The project folder where is where the file structure pane of your p5 sketch can be viewed. This is where you can toggle between the sketch.js, index.html and style.css files.
+- The project folder is found by clicking the arrow next to the filename (usually sketch.js at the top of the editing window). The project folder is where the file structure pane of your p5 sketch can be viewed. This is where you can toggle between the sketch.js, index.html and style.css files to edit these.
 
 ![Project folder](images/8a.png)
 
@@ -56,9 +55,9 @@ The p5 editor is in an alpha phase of development. Please report any bugs or iss
 
 ##Adding Libraries
 
-- There are three ways to add extra libraries to your sketch. 
- 	- In the index.html file, add links to the CDN versions of the library
-	- Use the first dropdown arrow in the project folder and select add file. Drag and drop your libary files in this popup.
+- There are three ways to use extra libraries in your sketch. 
+ 	- In the index.html file, add links to the online [CDN versions](http://www.jsdelivr.com/) of the library
+	- Use the first dropdown arrow in the project folder and select add file. Drag and drop your libary files in the popup.
 	- Using the same popup, a new empty file can be created. You can type/paste your library code there.
 
 
@@ -68,7 +67,7 @@ The p5 editor is in an alpha phase of development. Please report any bugs or iss
 
 ![Preferences](images/6.jpg)
 
-- The preference menu is where the themes, text sizes, sounds and accessibility text based settings can be changed. Accessibility features are being developed for p5 to improve usability for people with low vision.
+- The preference menu is where the themes, text sizes, sounds and accessibility settings can be changed. Accessibility features are being developed for p5 to improve usability for people with low vision.
 
 ![Preferences](images/7a.png)
 
