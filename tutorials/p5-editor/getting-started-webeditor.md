@@ -62,8 +62,8 @@ The p5 editor is in an alpha phase of development. Please report any bugs or iss
 
 ##Adding Media
 
-- To add media like images or sound file use the add file option in the Project folder. 
-- Upload your media and it will be available in your sketch. At the time of writing 5mb is maximum size for additional media.
+- To add media like images or sound files, also use the 'add file' option in the Project folder menu. 
+- Upload your media and it will then be available in your sketch. At the time of writing maximum file size is 5mb.
 
 ![Adding media](images/11a.png)
 
