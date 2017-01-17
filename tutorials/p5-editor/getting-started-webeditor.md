@@ -60,6 +60,10 @@ The p5 editor is in an alpha phase of development. Please report any bugs or iss
 	- Use the first dropdown arrow in the project folder and select add file. Drag and drop your libary files in the popup.
 	- Using the same popup, a new empty file can be created. You can type/paste your library code there.
 
+##Adding Media
+
+- To add media like images or sound file use the add file option in the Project folder. 
+- Upload your media and it will be available in your sketch. At the time of writing 5mb is maximum size for additional media.
 
 ##Preferences
 
