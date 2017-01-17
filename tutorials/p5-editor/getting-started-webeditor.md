@@ -66,7 +66,7 @@ The p5 editor is in an alpha phase of development. Please report any bugs or iss
 
 - Preferences is located at the cog to the top right of the screen. 
 
-![Preferences](images/6.jpg
+![Preferences](images/6.jpg)
 
 - The preference menu is where the themes, text sizes, sounds and accessibility text based settings can be changed. Accessibility features are being developed for p5 to improve usability for people with low vision.
 
