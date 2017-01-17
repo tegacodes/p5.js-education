@@ -25,7 +25,7 @@ The p5 editor is in an alpha phase of development. Please report any bugs or iss
 - EXAMPLES: Loads the examples included on the p5js website.
 - CONSOLE mirrors the chrome javascript console. 
 - REFERENCE: Link to reference page of p5js website.
-- ABOUT: What is p5js? 
+- ABOUT: links
 
 ##Editing Window
 ![Editing window](images/3a.png)
