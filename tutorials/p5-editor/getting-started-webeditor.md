@@ -6,6 +6,7 @@ The p5 web editor allows for p5 sketches to be created, edited and saved in the 
 
 The p5 editor is in an alpha phase of development. Please report any bugs or issues you find to us [here.](https://github.com/processing/p5.js-web-editor/issues) 
 
+
 ##Main Menu
 
 - The main navigation menu is where you can start a new sketch, save and open your old sketches. There are also links to examples and the p5 reference page.
@@ -26,6 +27,7 @@ The p5 editor is in an alpha phase of development. Please report any bugs or iss
 - REFERENCE: Links to reference page of p5js website.
 - ABOUT: Helpful links
 
+
 ##Editing Window
 ![Editing window](images/3a.png)
 
@@ -41,6 +43,7 @@ The p5 editor is in an alpha phase of development. Please report any bugs or iss
 
 ![Console](images/5.png)
 
+
 ##Project Folder
 
 - The project folder is found by clicking the arrow next to the filename (usually sketch.js at the top of the editing window). The project folder is where the file structure pane of your p5 sketch can be viewed. This is where you can toggle between the sketch.js, index.html and style.css files to edit these.
@@ -53,6 +56,7 @@ The p5 editor is in an alpha phase of development. Please report any bugs or iss
 
 - The second dropdown arrow is where you can rename or delete files. 
 
+
 ##Adding Libraries
 
 - There are three ways to use extra libraries in your sketch. 
@@ -60,12 +64,14 @@ The p5 editor is in an alpha phase of development. Please report any bugs or iss
 	- Use the first dropdown arrow in the project folder and select add file. Drag and drop your libary files in the popup.
 	- Using the same popup, a new empty file can be created. You can type/paste your library code there.
 
+
 ##Adding Media
 
 - To add media like images or sound files, also use the 'add file' option in the Project folder menu. 
 - Upload your media and it will then be available in your sketch. At the time of writing maximum file size is 5mb.
 
 ![Adding media](images/11a.png)
+
 
 ##Preferences
 
