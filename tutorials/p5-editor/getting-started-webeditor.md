@@ -40,7 +40,7 @@ The p5 editor is in an alpha phase of development. Please report any bugs or iss
 
 - The console is where error and print commands are displayed.
 
-![Editing window](images/5a.png)
+![Console](images/5a.png)
 
 ##Project Folder
 
